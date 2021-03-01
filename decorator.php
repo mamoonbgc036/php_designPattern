@@ -7,6 +7,7 @@ class CD{
     }
 
     public function addTrack($trck){
+        echo __METHOD__;
         $this->tracks = $trck;
     }
 
@@ -20,6 +21,8 @@ class CD{
         return $output;
     }
 }
+
+var_dump($_SERVER);die();
 
 $tracksFromExternalSource = array('What It Means', 'Brr', 'Goodbye');
 $myCD = new CD();
