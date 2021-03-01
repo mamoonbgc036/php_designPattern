@@ -1,50 +1,30 @@
 <?php
-class AddressDisplay
-{
-    private $addressType;
-    private $addressText;
- 
-    public function setAddressType($addressType)
-    {
-        $this->addressType = $addressType;
+class Photo{
+    public $x = "mamoon";
+    public $y = "noman";
+    public function camaraOn(){
+        echo "press button camara on"."<br>";
+        return $this;
     }
- 
-    public function getAddressType()
-    {
-        return $this->addressType;
+
+    public function arrowCamara(){
+        echo "arrow the camara on"."<br>";
+        return $this;
     }
- 
-    public function setAddressText($addressText)
-    {
-        $this->addressText = $addressText;
-    }
- 
-    public function getAddressText()
-    {
-        return $this->addressText;
+
+    public function pressTakeButton(){
+        echo "press take button to take the picture"."<br>";
     }
 }
- 
-class EmailAddress
-{
-    private $emailAddress;
-     
-    public function getEmailAddress()
-    {
-        return $this->emailAddress;
-    }
-     
-    public function setEmailAddress($address)
-    {
-        $this->emailAddress = $address;
+
+class PrintImage extends Photo{
+    public function printPicture(){
+        echo "printing the taken picture"."<br>";
     }
 }
- 
-$emailAddress = new EmailAddress();
-/* Populate the EmailAddress object */
-$address = new AddressDisplay();
-/* Here's the assignment code, where I'm assigning values 
-  from one object to another... */
-$address->setAddressType("email");
-$address->setAddressText($emailAddress->getEmailAddress());
+
+$x = new PrintImage();
+
+$x->camaraOn()->arrowCamara();
+
 ?>
