@@ -12,4 +12,13 @@
 
  $obj = new test('mamoon');
  echo $obj->sayHello();
+
+ class test1{
+     public function __call($name, $arguments){
+         echo $name. ' => ' . implode(', ', $arguments);
+     }
+ }
+
+ $std = new test1();
+ echo $std->hello('mamoon', 'noman', 'sharif');
 ?>
