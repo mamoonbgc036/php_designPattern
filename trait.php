@@ -2,7 +2,8 @@
  trait test{
      private $_name;
      public function setName($name){
-         return $this->_name = $name;
+         $this->_name = $name;
+         return $this;
      }
  }
 
@@ -26,8 +27,8 @@
  }
 
  $x = new test1();
- $x->setName('mamoon');
- echo $x->getName();
- $x->setAge(25);
- echo $x->cop();
+ echo $x->setName('mamoon')->getName();
+// echo $x->getName();
+//  $x->setAge(25);
+//  echo $x->cop();
 ?>
