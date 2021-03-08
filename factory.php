@@ -1,30 +1,23 @@
 <?php
-class Automobile
-{
-    private $vehicleMake;
-    private $vehicleModel;
+class Product{
+    private $_name;
+    private $_category;
 
-    public function __construct($make, $model)
-    {
-        $this->vehicleMake = $make;
-        $this->vehicleModel = $model;
+    public function __construct($name, $cat){
+        $this->_name = $name;
+        $this->_category = $cat;
     }
 
-    public function getMakeAndModel()
-    {
-        return $this->vehicleMake . ' ' . $this->vehicleModel;
+    public function getProduct(){
+        return $this->_name." is belongs to ".$this->_category;
     }
 }
 
-class AutomobileFactory
-{
-    public static function create($make, $model)
-    {
-        return new Automobile($make, $model);
+class productFactory{
+    public static function make($name, $cat){
+        return new Product($name, $cat);
     }
 }
+$x = productFactory::make('cat','animal');
 
-// have the factory create the Automobile object
-$veyron = AutomobileFactory::create('Bugatti', 'Veyron');
-
-print_r($veyron->getMakeAndModel());
+print_r($x->getProduct());
