@@ -1,18 +1,19 @@
 <?php
 class single{
-    private $_instance;
+    protected static $_instance;
     private $_name;
     private $_age;
 
     public function __construct($name,$age){
-        $this->_instance = new single();
+        self::$_name = $name;
+        self::$_age = $age;
     }
 
     public static function getInstance(){
-        if(!$this->_instance){
-            $this->_instance = new single();
+        if(!self::$_instance){
+            self::$_instance = new single();
         }
-        return $this;
+        return self::$_instance;
     }
 
     public function getName(){
@@ -20,4 +21,4 @@ class single{
     }
 }
 
-single::getInstance()
+single::getInstance('mamoon',24);
