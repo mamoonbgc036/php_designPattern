@@ -14,4 +14,4 @@ class test{
     }
 }
 
-print_r(test::show('mamoon', 24));
+print_r(getenv("PATH"));
