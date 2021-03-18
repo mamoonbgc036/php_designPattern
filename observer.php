@@ -1,84 +1,41 @@
 <?php
-interface Observer {
-    public function addCurrency(Currency $currency);
+
+interface observable{
+    function attach(Observer $observer);
+    function notify($info, $event);
 }
- 
-class priceSimulator implements Observer {
-    private $currencies;
-     
-    public function __construct() {
-        $this->currencies = array();
+
+interface observer{
+    function update(observable $observable, $info, $event);
+}
+
+class bankaccount implements observable{
+    private $observer = [];
+    function attach(Observer $observer){
+        $this->observer = $observer;
     }
-     
-    public function addCurrency(Currency $currency) {
-        array_push($this->currencies, $currency);
-    }
-     
-    public function updatePrice() {
-        foreach ($this->currencies as $currency) {
-            $currency->update();
+
+    function notify($info, $event){
+        foreach($this->observer as $observe){
+            $observe->update($this, $info, $event);
         }
     }
+
+    function withdraw($money){
+        $this->notify($money, 'witdraw');
+    }
 }
- 
-interface Currency {
-    public function update();
-    public function getPrice();
+
+class smsNotifyer implements observer{
+    function update(observable $observable, $info, $event){
+        print_r($info, $event);
+    }
 }
- 
-class Pound implements Currency {
-    private $price;
-     
-    public function __construct($price) {
-        $this->price = $price;
-        echo "<p>Pound Original Price: {$price}</p>";
-    }
-     
-    public function update() {
-        $this->price = $this->getPrice();
-        echo "<p>Pound Updated Price : {$this->price}</p>";
-    }
-     
-    public function getPrice() {
-        return f_rand(0.65, 0.71);
-    }
-     
-}
- 
-class Yen implements Currency {
-    private $price;
- 
-    public function __construct($price) {
-        $this->price = $price;
-        echo "<p>Yen Original Price : {$price}</p>";
-    }
- 
-    public function update() {
-        $this->price = $this->getPrice();
-        echo "<p>Yen Updated Price : {$this->price}</p>";
-    }
-     
-    public function getPrice() {
-        return f_rand(120.52, 122.50);
-    }
-     
-}
- 
-function f_rand($min=0,$max=1,$mul=1000000){
-    if ($min>$max) return false;
-    return mt_rand($min*$mul,$max*$mul)/$mul;
-}
- 
-$priceSimulator = new priceSimulator();
- 
-$currency1 = new Pound(0.60);
-$currency2 = new Yen(122);
- 
-$priceSimulator->addCurrency($currency1);
-$priceSimulator->addCurrency($currency2);
- 
-echo "<hr />";
-$priceSimulator->updatePrice();
- 
-echo "<hr />";
-$priceSimulator->updatePrice();
+
+echo "mamoon";
+
+$bank = new bankaccount();
+$sms = new smsNotifyer();
+
+$bank->attach($sms);
+$bank->withdraw(500);
