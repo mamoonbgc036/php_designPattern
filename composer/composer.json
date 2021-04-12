@@ -1,0 +1,17 @@
+{
+    "name": "user/composer",
+    "description": "composer practic project",
+    "authors": [
+        {
+            "name": "Abdullah Al Mamoon",
+            "email": "mamoon036@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/dom-crawler": "^5.2",
+        "symfony/css-selector": "^5.2"
+    },
+    "autoload": {
+    	"psr-4": {"webscrap\\":"src"}
+    }
+}
