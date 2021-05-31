@@ -19,6 +19,13 @@ class upperCasename extends filePrinting{
     }
 }
 
+use namespace\test\practics;
+include_once('namespace/test/practics.php');
+
+$y = new practics();
+
+$y->show();
+
 $x = new upperCasename();
 
 echo $x->upperString('mamoon');
