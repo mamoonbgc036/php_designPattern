@@ -1,23 +1,23 @@
 <?php
 
  class test{
-    private $name;
+    private $name = "mamoon";
 
-    public function setName($na){
-        $this->name = $na;
-    }
+    // public function setName($na){
+    //     $this->name = $na;
+    // }
 
-    private function getName(){
+    public function getName(){
         echo $this->name;
     }
 
-    public function name(){
-        $this->getName();
-    }
+    // public function name(){
+    //     $this->getName();
+    // }
  }
 
  $x = new test();
 
- $x->setName('boyshort');
+ //$x->setName('boyshort');
 
- $x->name();
+ echo $x->getName();
