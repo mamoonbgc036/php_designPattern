@@ -1,31 +1,23 @@
 <?php
-class filePrinting{
+
+ class test{
     private $name;
-    public function getName($name){
-        $this->name = $name;
+
+    public function setName($na){
+        $this->name = $na;
     }
 
-    public function showName(){
-        return $this->name;
+    private function getName(){
+        echo $this->name;
     }
-}
 
-class upperCasename extends filePrinting{
-    public $uppername;
-   public function upperString($name){
-        $this->name = $name;
-        $this->uppername = strtoupper($this->$name);
-        return $this->uppername;
+    public function name(){
+        $this->getName();
     }
-}
+ }
 
-use namespace\test\practics;
-include_once('namespace/test/practics.php');
+ $x = new test();
 
-$y = new practics();
+ $x->setName('boyshort');
 
-$y->show();
-
-$x = new upperCasename();
-
-echo $x->upperString('mamoon');
+ $x->name();
