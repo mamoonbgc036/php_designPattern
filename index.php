@@ -1,23 +1,25 @@
 <?php
 
- class test{
-    private $name = "mamoon";
+class single{
+    protected static $_instance;
+    private static $_name;
+    private static $_age;
 
-    // public function setName($na){
-    //     $this->name = $na;
-    // }
-
-    public function getName(){
-        echo $this->name;
+    public function __construct($name,$age){
+        self::$_name = $name;
+        self::$_age = $age;
     }
 
-    // public function name(){
-    //     $this->getName();
-    // }
- }
+    public static function getInstance($name, $age){
+        if(!self::$_instance){
+            self::$_instance = new single($name,$age);
+        }
+        return self::$_instance;
+    }
 
- $x = new test();
+    public function getName(){
+        return self::$_name;
+    }
+}
 
- //$x->setName('boyshort');
-
- echo $x->getName();
+echo single::getInstance('mamoon',24)->getName();
