@@ -1,25 +1,7 @@
 <?php
 
-class single{
-    public static $name = "mamoon";
-    private static $sex;
-    private $age;
+$data = file_get_contents('http://official-joke-api.appspot.com/random_joke');
+echo gettype($data);
 
-    public function __construct(){
-        
-    }
 
-    public static function setSex($s){
-        self::$sex = $s;
-        return $this;
-    }
 
-    public function getSex(){
-        echo self::$sex;
-    }
-}
-
-// $x = new single();
-// $x->setSex(24)->getSex();
-
-single::setSex(24)->getSex();

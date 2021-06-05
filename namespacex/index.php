@@ -2,7 +2,7 @@
 	use test\practics;
 	include_once('test/practics.php');
 
-	use test1\practics1;
+	use test\practics1;
 	include_once('test1/practics1.php');
 
 	$x = new practics();
