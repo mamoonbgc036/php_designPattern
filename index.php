@@ -1,4 +1,8 @@
 <?php
-$a = "better";
-echo "something $a";
 
+$a = array(1,2,3);
+
+$b = json_encode($a);
+
+
+echo gettype($b);
