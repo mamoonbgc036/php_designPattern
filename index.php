@@ -1,8 +1,13 @@
 <?php
 
 function makeTest($a, $b){
-    return $a==10 || $b==10 || $a+$b == 10 ? 'Found' : 'Not Found';
+    $arr = array($a,$b,$a+$b);
+    if(in_array(10, $arr)){
+        return 'Found';
+    }else{
+        return 'Not Found';
+    }
 }
 
-echo makeTest(8,5);
+echo makeTest(10,5);
 
