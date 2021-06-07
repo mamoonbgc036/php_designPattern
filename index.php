@@ -1,26 +1,19 @@
 <?php
+ 
  class Test{
-    public $aver;
+    public $name,$age;
 
-    public function averageCount($x){
-        $sum = 0;
-        $len = count($x);
-        for ($i=0; $i < $len ; $i++) { 
-            $sum+=$x[$i];
-        }
-        return $this->aver = $sum/$len;
+    public function __construct($name,$age){
+        $this->name = $name;
+        $this->age = $age;
     }
  }
 
- $ob = new Test();
-
- class TestOne{
-    public $obj;
-
-    public function __construct($y,$arr){
-        echo $y->averageCount($arr);
+ class TestOne extends Test{
+    public function getName(){
+        return $this->name;
     }
  }
 
- new TestOne($ob,[1,2,3,4,5,6,7]);
- echo base64_encode("mamoon");
+ $x = new TestOne('noman',24);
+ echo $x->getName();
