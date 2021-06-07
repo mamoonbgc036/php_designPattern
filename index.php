@@ -12,13 +12,14 @@
     }
  }
 
+ $ob = new Test();
+
  class TestOne{
     public $obj;
 
-    public function __construct($arr){
-        $this->obj = new Test();
-        echo $this->obj->averageCount($arr);
+    public function __construct($y,$arr){
+        echo $y->averageCount($arr);
     }
  }
 
- new TestOne([1,2,3,4,5]);
+ new TestOne($ob,[1,2,3,4,5,6,7]);
