@@ -1,16 +1,11 @@
 <?php
- 
- function largestSwap($num) {
-    $x = str_split($num);
-    $y = $x[0];
-    $x[0] = $x[1];
-    $x[1] = $y;
-    $newOne = $x[0].$x[1];
-    if ($num<$newOne) {
-        echo true;
-    }else{
-        echo false;
+ function averageCount($x){
+    $sum = 0;
+    $len = count($x);
+    for ($i=0; $i < $len ; $i++) { 
+        $sum+=$x[$i];
     }
-}
+    return $sum/$len;
+ }
 
-largestSwap(43);
+ echo averageCount([1,2,3,4]);
