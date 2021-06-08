@@ -1,3 +1,5 @@
 <?php
- 
-echo phpinfo();
+
+#!usr/bin/env php
+
+
