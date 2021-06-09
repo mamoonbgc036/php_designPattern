@@ -1,5 +1,5 @@
 <?php
- class Test{
+ trait Test{
     protected $_name;
     public $_age;
 
@@ -13,14 +13,14 @@
     }
  }
 
- class testOne extends Test{
-    //use Test;
+ class testOne{
+    use Test;
     public function getName(){
         return $this->_name;
     }
  }
 
- $x = new testOne('noman',22);
+ $x = new testOne('noman',24);
 
  echo $x->getName();
  echo $x->getAge();
