@@ -1,22 +1,19 @@
 <?php
 
-// Parent class
-abstract class Car {
-  public $name;
-  public function __construct($name) {
-    $this->name = $name;
-  }
-  abstract public function intro();
+abstract class Test{
+	public $_name;
+	public function __construct($name){
+		$this->_name = $name;
+	}
+
+	abstract public function intro();
 }
 
-// Child classes
-class Audi extends Car {
-  public function intro(){
-    return "Choose German quality! I'm an $this->name!";
-  }
+class firstTest extends Test{
+	public function intro(){
+		return $this->_name;
+	}
 }
 
-// Create objects from the child classes
-$audi = new audi("Audi");
-echo $audi->intro();
-echo "<br>";
+$x = new firstTest('mamoon');
+echo $x->intro();
