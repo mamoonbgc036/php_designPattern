@@ -1,5 +1,3 @@
 <?php
 
-#!usr/bin/env php
-
-
+    echo strrev("Hello World");
