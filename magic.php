@@ -12,31 +12,22 @@
  	}
  }
 
- $x = new Test();
- $x->mamoon([12,24]);
- Test::noman(12,24,45);
+ // $x = new Test();
+ // $x->mamoon([12,24]);
+ // Test::noman(12,24,45);
 
-class kids
-{
-
-	public function __set($property, $value)
-	{
-		if ($value > 30)
-		{
-			$this->property= $value;
-		}
+class setGet{
+	public function __set($prop, $value){
+		return $this->prop = $value;
 	}
 
-	public function __get($property)
-	{
-		return "The child's height is " . $this->property . " inches tall";
+	public function __get($property){
+		echo $this->prop;
 	}
-
 }
 
-$kid1= new kids;
+$x = new setGet();
 
-$kid1->height= 45;
+$x->test = 25;
 
-echo $kid1->height;
-var_dump($kid1);
+$x->test;
