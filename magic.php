@@ -17,17 +17,16 @@
  // Test::noman(12,24,45);
 
 class setGet{
-	public function __set($prop, $value){
-		return $this->prop = $value;
+	public function __set($property,$value){
+		return $this->property = $value;
 	}
 
 	public function __get($property){
-		echo $this->prop;
+		echo $this->property;
 	}
 }
 
 $x = new setGet();
 
-$x->test = 25;
-
-$x->test;
+$x->name = "noman";
+$x->name;
