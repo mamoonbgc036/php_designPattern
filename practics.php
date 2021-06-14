@@ -1,12 +1,17 @@
 <?php
-namespace test;
-class practics{
-	public function show(){
-	echo "mamoon";
-	}
-}
+ 
+ $x = "BLUE";
 
+ switch ($x) {
+ 	case 'RED':
+ 		echo "your favourite color is ".$x;
+ 		break;
 
-var_dump(1==="1");
-
-echo strpos("i love much php", "php");
+ 	case 'BLUE':
+ 		echo "your favourite color is ".$x;
+ 		break;
+ 	
+ 	default:
+ 		echo "Your favourite color is neither red nor blue";
+ 		break;
+ }
