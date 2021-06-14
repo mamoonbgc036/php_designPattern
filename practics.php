@@ -5,3 +5,6 @@ class practics{
 	echo "mamoon";
 	}
 }
+
+
+var_dump(1==="1");
