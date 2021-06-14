@@ -110,3 +110,7 @@ $x = new Trick();
 $x->doIt();
 
 $x->show();
+
+echo "we are in the file ".__FILE__;
+echo "Our script is located in ".__DIR__;
+echo "testing".dirname(__FILE__);
