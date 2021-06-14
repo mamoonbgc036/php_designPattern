@@ -8,3 +8,5 @@ class practics{
 
 
 var_dump(1==="1");
+
+echo strpos("i love much php", "php");
