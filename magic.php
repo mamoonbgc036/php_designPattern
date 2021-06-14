@@ -95,7 +95,18 @@ echo $example->a; // prints 15
 // Attempt to retrieve non-existent key from the array returns null
 echo $example->b; // prints nothing
 
-// If __isset('a') returns true, then call __unset('a')
-if (isset($example->a)) {
-    unset($example->a));
+
+class Trick{
+	public function doIt(){
+		echo __FUNCTION__;
+	}
+
+	public function show(){
+		echo __METHOD__;
+	}
 }
+
+$x = new Trick();
+$x->doIt();
+
+$x->show();
