@@ -15,3 +15,8 @@
  		echo "Your favourite color is neither red nor blue";
  		break;
  }
+
+ $age = array("Peter"=>35, "Ben"=>37, "Joe"=>43);
+
+$y = json_encode($age);
+echo gettype($y);
