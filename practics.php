@@ -20,3 +20,8 @@
 
 $y = json_encode($age);
 echo gettype($y);
+
+$z = '{"name":"mamoon","age":24}';
+
+$a = json_decode($z);
+var_dump($a);
