@@ -24,4 +24,9 @@ $y = json_decode($a);
 
 echo $y->Mamoon;
 
+$w = '{"nasir":42,"shawon":22}';
+
+$z = json_decode($w);
+echo $z->nasir;
+
 
