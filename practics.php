@@ -18,9 +18,14 @@
 
  $age = array("Peter"=>35, "Ben"=>37, "Joe"=>43);
 
- echo $age["Peter"];
+//  echo $age["Peter"];
 $y = json_encode($age);
 $a = json_decode($y);
 //var_dump($a->Ben);
+
+ //$st = '{"name":"mamoon","age":32}';
+
+
+ echo $a->Peter;
 
 
