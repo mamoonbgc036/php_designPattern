@@ -31,6 +31,11 @@ echo $z->nasir;
 
 $content = file_get_contents('SWOT_MY.txt');
 
-echo $content;
+$content = str_replace("PEOPLE", "peoples", $content);
+
+file_put_contents("SWOT_MY.txt", $content);
+
+
+
 
 
