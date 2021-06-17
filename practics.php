@@ -29,4 +29,8 @@ $w = '{"nasir":42,"shawon":22}';
 $z = json_decode($w);
 echo $z->nasir;
 
+$content = file_get_contents('SWOT_MY.txt');
+
+echo $content;
+
 
