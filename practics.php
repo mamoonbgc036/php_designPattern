@@ -73,6 +73,9 @@ $book_2->appendChild($id_2);
 $dom->appendChild($books);
 //saveXML() method returns the XML in a String
 print_r ($dom->saveXML());
+$string = "mamoon is a muslim";
+$doc = new DOMDocument();
+$doc->loadXML($string);
 
 
 
