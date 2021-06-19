@@ -35,6 +35,19 @@ $content = str_replace("PEOPLE", "peoples", $content);
 
 file_put_contents("SWOT_MY.txt", $content);
 
+$dom = new DOMDocument('1.0','utf-8');
+
+$dom->preserveWhiteSpace = false;
+
+$dom->formatOutput = true;
+
+$books = $dom->createElement('books');
+$books1 = $dom->createElement('book');
+
+$books->appendChild($books1);
+
+print_r($dom->saveXML());
+
 
 
 
