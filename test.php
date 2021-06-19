@@ -1,17 +1,13 @@
 <?php
-class test{
-    private $_name;
-    private $_age;
-
-    public function __construct($name, $age){
-        $this->_name = $name;
-        $this->_age = $age;
-    }
-
-    public static function show($name, $age){
-        $x = new test($name, $age);
-        return $x;
-    }
+// Function to make GET request using cURL
+function curlGet($url) {
+    $ch = curl_init();// Initialising cURL session
+    // Setting cURL options
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+    curl_setopt($ch, CURLOPT_URL, $url);
+    $results = curl_exec($ch); // Executing cURL session
+    curl_close($ch); // Closing cURL session
+    return $results; // Return the results
 }
-
-print_r(getenv("PATH"));
+$packtPage = curlGet('http://www.packtpub.com/oop-php-5/book');
+echo $packtPage;
