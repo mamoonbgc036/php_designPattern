@@ -9,5 +9,5 @@ function curlGet($url) {
     curl_close($ch); // Closing cURL session
     return $results; // Return the results
 }
-$packtPage = curlGet('http://www.packtpub.com/oop-php-5/book');
+$packtPage = curlGet("http://www.packtpub.com/oop-php-5/book");
 echo $packtPage;
