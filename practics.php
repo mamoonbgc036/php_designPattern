@@ -1,7 +1,7 @@
 <?php
  
    class billCalculation{
-   	public static $instance;
+   	private static $instance;
    	public $price;
    	public $person;
    	public $totalBill;
