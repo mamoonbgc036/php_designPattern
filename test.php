@@ -1,11 +1,9 @@
 <?php
     
-    $string = ['mamoon','noman','sharif'];
+    namespace App;
 
-    $len = array_map("Textlenght", $string);
-
-    var_dump($len);
-
-    function Textlenght($item){
-        return strlen($item);
+    class Test{
+        public function __construct(){
+            echo "test";
+        }
     }

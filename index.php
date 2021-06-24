@@ -1,3 +1,7 @@
 <?php
 
-    echo strrev("Hello World");
+   include_once "test.php";
+
+   
+
+   new App\Test();
