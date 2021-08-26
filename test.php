@@ -49,3 +49,17 @@ try {
 catch(Exception $e) {
   echo 'Message: ' .$e->getMessage();
 }
+
+function isHuman($s){
+	if($s=="animal"){
+		throw new Exception("You are not Human");
+	}
+	return true;
+}
+
+try{
+	isHuman("animal");
+	echo "You are Human";
+}catch(Exception $e){
+	echo $e->getMessage();
+}
