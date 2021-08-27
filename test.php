@@ -63,3 +63,14 @@ try{
 }catch(Exception $e){
 	echo $e->getMessage();
 }
+
+interface Mamoon{
+	public function sendMsg();
+}
+
+class sendSMS implements Mamoon{
+	public function sendMsg($ms){
+		$x = new SMS();
+		$x->messaging($ms);
+	}
+}
