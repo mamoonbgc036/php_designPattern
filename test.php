@@ -92,3 +92,32 @@ class sendSMS implements Mamoon{
 	</script>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h4 id="ran">0</h4>
+	<button id="test">Increase</button>
+	<button id="show">Decrease</button>
+	<script type="text/javascript">
+		const x = document.querySelector("#test");
+		const y = document.querySelector("#show");
+		x.addEventListener("click",function(){
+			let val = document.getElementById("ran").innerHTML;
+			val++;
+			document.getElementById("ran").innerHTML = val;
+		})
+
+		y.addEventListener("click",function(){
+			let val = document.getElementById("ran").innerHTML;
+
+			if(val>0){
+				val--;
+				document.getElementById("ran").innerHTML = val;
+			}
+		})
+	</script>
+</body>
+</html>
