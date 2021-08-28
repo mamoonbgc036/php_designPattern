@@ -74,3 +74,21 @@ class sendSMS implements Mamoon{
 		$x->messaging($ms);
 	}
 }
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>test</p>
+	<p>show</p>
+	<button id="test">click</button>
+	<script type="text/javascript">
+		const x = document.getElementById("test");
+		x.addEventListener("click",function(){
+			alert("ok");
+		})
+	</script>
+</body>
+</html>
