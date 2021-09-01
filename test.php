@@ -140,3 +140,22 @@ class Cat{
 		echo "maaaawo";
 	}
 }
+
+class Motivation{
+	public function motivate($degree){
+		switch($degree){
+			case 1:
+			echo "You are alive";
+				break;
+			case 2:
+				echo "You are awesome";
+				break;
+			case 3:
+				echo "You are Healthy"
+				break;
+			default:
+				echo "You have gotten an amazing day"
+					break;
+		}
+	}
+}
