@@ -75,6 +75,17 @@ class sendSMS implements Mamoon{
 	}
 }
 
+class Singleton{
+	private $instance;
+	
+	public static function getInstance(){
+		if (!isset($instance)){
+			$this->instance = new Singleton();
+		}
+		return $this->instance;
+	}
+}
+
 <!DOCTYPE html>
 <html>
 <head>
