@@ -45,3 +45,7 @@
   } else{
     echo "http";
   }
+
+  // to redirect user to a different page
+
+  header("Location: https://prothomalo.com/");
