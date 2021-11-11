@@ -34,6 +34,8 @@
 //get information about url
   $url = "https://www.w3resource.com/php-exercises/php-basic-exercise-8.php";
   $url = parse_url($url);
-
+  
+  echo $url['scheme'];
+  echo $url['host'];
   echo $url['path'];
 
