@@ -38,4 +38,10 @@
   echo $url['scheme'];
   echo $url['host'];
   echo $url['path'];
+  //determin whether https or http
 
+  if(!empty($_SERVER['HTTPS'])){
+      echo "https";
+  } else{
+    echo "http";
+  }
