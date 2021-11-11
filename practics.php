@@ -31,5 +31,9 @@
    echo billCalculation::getInstance()->setPrice(26)->setPerson(5)->calculateBill();
 
 
+//get information about url
+  $url = "https://www.w3resource.com/php-exercises/php-basic-exercise-8.php";
+  $url = parse_url($url);
 
+  echo $url['path'];
 
