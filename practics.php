@@ -49,3 +49,23 @@
   // to redirect user to a different page
 
   header("Location: https://prothomalo.com/");
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <form method="POST">
+    <input type="text" name="name">
+    <input type="submit" name="">
+  </form>
+</body>
+</html>
+
+<?php
+
+ if (isset($_POST['name'])) {
+   echo $_POST['name'];
+ }
+?>
