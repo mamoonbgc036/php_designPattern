@@ -68,4 +68,7 @@
  if (isset($_POST['name'])) {
    echo $_POST['name'];
  }
-?>
+
+echo date('h:i:s').'<br>';
+  sleep(5);
+  echo date('h:i:s');
