@@ -137,3 +137,18 @@ function convertWord($str){
   }
 
   var_dump(removeDuplicate([1,1,2,2,3,4,5]));
+
+ function findMatch($model, $test){
+  $molen = strlen($model);
+  $telen = strlen($test);
+
+  if(substr($model, $molen-$telen, $telen)==$test){
+    return true;
+  }else{
+    return false;
+  }
+
+ }
+
+
+echo findMatch('mamoon', 'moon');
