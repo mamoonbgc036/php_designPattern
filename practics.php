@@ -130,3 +130,10 @@ function convertWord($str){
   return $result;
 }
 
+  function removeDuplicate($list){
+    $arr = array_values(array_unique($list));
+
+    return $arr;
+  }
+
+  var_dump(removeDuplicate([1,1,2,2,3,4,5]));
