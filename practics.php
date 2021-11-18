@@ -152,3 +152,13 @@ function convertWord($str){
 
 
 echo findMatch('mamoon', 'moon');
+
+function firstNonrepeatedword($str){
+    for ($i=0; $i < strlen($str) ; $i++) { 
+      if (substr_count($str, substr($str, $i, 1)) == 1 ) {
+        return substr($str, $i, 1);
+      }
+    }
+  }
+
+  echo firstNonrepeatedword('abcdea');
