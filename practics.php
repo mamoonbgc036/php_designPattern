@@ -162,3 +162,4 @@ function firstNonrepeatedword($str){
   }
 
   echo firstNonrepeatedword('abcdea');
+https://www.codecademy.com/code-challenges?utm_source=youtube&utm_medium=organic-social&utm_content=yt_code_challenges_livestream
