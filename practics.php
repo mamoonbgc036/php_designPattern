@@ -162,4 +162,14 @@ function firstNonrepeatedword($str){
   }
 
   echo firstNonrepeatedword('abcdea');
-https://www.codecademy.com/code-challenges?utm_source=youtube&utm_medium=organic-social&utm_content=yt_code_challenges_livestream
+ function sum_of_digit($nums){
+    $digitSum = 0;
+
+    for ($i=0; $i < strlen($nums) ; $i++) { 
+      $digitSum += $nums[$i];
+    }
+
+    return $digitSum;
+  }
+
+  echo sum_of_digit('12345');
