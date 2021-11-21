@@ -173,3 +173,12 @@ function firstNonrepeatedword($str){
   }
 
   echo sum_of_digit('12345');
+
+ $pattern = '/fox/';
+  $str = 'The quick brown fox jumps over the lazy dogs';
+
+  if (preg_match($pattern, $str)) {
+    echo $pattern. 'is present in the string';
+  } else{
+    echo $pattern. 'is not present in the string';
+  }
