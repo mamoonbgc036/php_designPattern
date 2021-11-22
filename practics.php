@@ -182,3 +182,9 @@ function firstNonrepeatedword($str){
   } else{
     echo $pattern. 'is not present in the string';
   }
+
+//remove white space from a string
+
+  $str = 'The quick brown fox jumps over the lazy dogs';
+
+  echo preg_replace('/\s+/', '', $str);
