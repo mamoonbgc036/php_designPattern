@@ -188,3 +188,9 @@ function firstNonrepeatedword($str){
   $str = 'The quick brown fox jumps over the lazy dogs';
 
   echo preg_replace('/\s+/', '', $str);
+
+ $str = 'I am @ abdullah al mamoon';
+
+  $newStr = preg_replace('/[^A-Za-z0-9]/', ' ', $str);
+
+  echo $newStr;
