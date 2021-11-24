@@ -194,3 +194,10 @@ function firstNonrepeatedword($str){
   $newStr = preg_replace('/[^A-Za-z0-9]/', ' ', $str);
 
   echo $newStr;
+
+ $str = 'I am @abdullah al *mamoon036';
+
+  $newStr = preg_replace('/[^A-Za-z,*]/', '', $str);
+
+  echo $newStr;
+
