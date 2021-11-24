@@ -201,3 +201,15 @@ function firstNonrepeatedword($str){
 
   echo $newStr;
 
+class Test{
+    public $mess = 'Hello, I am ';
+
+    public function introduc($name){
+      return $this->mess.$name;
+    }
+  }
+
+  $x = new Test();
+
+  echo $x->introduc('mamoon');
+
