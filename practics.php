@@ -212,4 +212,27 @@ class Test{
   $x = new Test();
 
   echo $x->introduc('mamoon');
+ //calculate factorial of a number
+  class Test{
+    public $factor = 1;
+    public function __construct($num){
+      if (!is_int($num)) {
+        throw new InvalidArgumentException(''.$num.' is not a number');
+      }
+      $this->factorial($num);
+      $this->result();
+    }
+    public function factorial($num){
+      for ($i=1; $i <= $num ; $i++) { 
+       $this->factor *= $i;
+      }
+      return $this->factor;
+    }
+
+    public function result(){
+      echo $this->factor;
+    }
+  }
+
+  new Test(7);
 
