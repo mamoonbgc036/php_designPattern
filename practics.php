@@ -236,3 +236,10 @@ class Test{
 
   new Test(7);
 
+  $sdate = new DateTime('1987-12-15');
+  $edate = new DateTime('2021-11-25');
+
+  $interval = $sdate->diff($edate);
+
+  echo $interval->y . ' years '. $interval->m. ' month '. $interval->d . ' days.';
+
