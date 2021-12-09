@@ -2,7 +2,36 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		header img{
+			width: 100%;
+		}
+
+		#menu ul{
+			display: flex;
+			justify-content: space-around;
+			background: #ECECEC;
+		}
+
+		#middle{
+			display: flex;
+			justify-content: space-around;
+		}
+
+		#menu ul li{
+			list-style: none;
+		}
+
+		#menu ul li a{
+			font-size: 13px;
+			padding: 5px;
+		}
 		#shopingCart, ul{
 			display: flex;
 			justify-content: center;
@@ -17,17 +46,76 @@
 		#card img{
 			width: 130px;
 		}
+
+		#shoppingCart img{
+			width: 50px;
+		}
+
+		#brand{
+			width: 30%;
+		}
+
+		#search{
+			width: 40%;
+		}
+
+		#shoppingCart{
+			width: 10%;
+		}
+
+		#animate{
+			width: 20%;
+		}
+
+		#search input,img{
+			height: 50px;
+		}
 	</style>
 </head>
 <body>
 	<header>
-		<ul>
-			<li><a href="">HOME</a></li>
-			<li><a href="">HOME</a></li>
-			<li><a href="">HOME</a></li>
-			<li><a href="">HOME</a></li>
-		</ul>
+		<a href=""><img src="img/top.gif"></a>
 	</header>
+	<div id="middle">
+		<div id="brand">
+			<img src="img/mainLogo.png">
+		</div>
+		<div id="search">
+			<input type="" name="" placeholder="Search">
+			<img src="img/search.png">
+		</div>
+		<div id="shoppingCart">
+			<img src="img/shopping.png">
+		</div>
+		<div id="animate">
+			<img src="img/logo.gif">
+		</div>
+	</div>
+	<div id="menu">
+		<ul>
+			<li>
+				<a href="">SAVE MORE ON APP</a>
+			</li>
+			<li>
+				<a href="">SELL ON DARAZ</a>
+			</li>
+			<li>
+				<a href="">CUSTOMER CARE</a>
+			</li>
+			<li>
+				<a href="">TRACK MY ORDER</a>
+			</li>
+			<li>
+				<a href="">SIGNUP/LOGIN</a>
+			</li>
+			<li>
+				<a href="">DARAZ AFFILIATE PROGRAM</a>
+			</li>
+			<li>
+				<a href="">LANGUAGE</a>
+			</li>
+		</ul>
+	</div>
 	<div id="shopingCart">
 		<div id="card">
 		<a href="">
