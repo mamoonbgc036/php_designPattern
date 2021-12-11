@@ -19,11 +19,6 @@
 			background: #ECECEC;
 		}
 
-		#middle{
-			display: flex;
-			justify-content: space-around;
-		}
-
 		#menu ul li{
 			list-style: none;
 		}
@@ -32,19 +27,25 @@
 			font-size: 13px;
 			padding: 5px;
 		}
+
+		#shopingCart{
+			margin-top: 10px;
+		}
 		#shopingCart, ul{
 			display: flex;
 			justify-content: center;
 		}
 		#card{
-			width: 150px;
+			width: 180px;
+			text-align: center;
 		}
 
 		#card:hover{
 			box-shadow:1px 5px 5px 5px #E7EAED 
 		}
 		#card img{
-			width: 130px;
+			width: 100%;
+			height: 150px;
 		}
 
 		#shoppingCart img{
@@ -53,22 +54,41 @@
 
 		#brand{
 			width: 30%;
+			display: inline-block;
 		}
 
 		#search{
 			width: 40%;
+			display: inline-block;
+			font-size: 0;
 		}
+
 
 		#shoppingCart{
 			width: 10%;
+			display: inline-block;
 		}
 
 		#animate{
-			width: 20%;
+			width: 18%;
+			display: inline-block;
+		}
+
+		#animate img{
+			width: 100%;
 		}
 
 		#search input,img{
 			height: 50px;
+			vertical-align: middle;
+		}
+
+		#search input{
+			width: 80%;
+		}
+
+		#search img{
+			width: 20%;
 		}
 	</style>
 </head>
@@ -76,21 +96,6 @@
 	<header>
 		<a href=""><img src="img/top.gif"></a>
 	</header>
-	<div id="middle">
-		<div id="brand">
-			<img src="img/mainLogo.png">
-		</div>
-		<div id="search">
-			<input type="" name="" placeholder="Search">
-			<img src="img/search.png">
-		</div>
-		<div id="shoppingCart">
-			<img src="img/shopping.png">
-		</div>
-		<div id="animate">
-			<img src="img/logo.gif">
-		</div>
-	</div>
 	<div id="menu">
 		<ul>
 			<li>
@@ -116,17 +121,62 @@
 			</li>
 		</ul>
 	</div>
+	<div id="middle">
+		<div id="brand">
+			<img src="img/mainLogo.png">
+		</div>
+		<div id="search">
+			<input type="" name="" placeholder="Search">
+			<img src="img/logo1.png">
+		</div>
+		<div id="shoppingCart">
+			<img src="img/shopping.png">
+		</div>
+		<div id="animate">
+			<img src="img/logo.gif">
+		</div>
+	</div>
 	<div id="shopingCart">
 		<div id="card">
-		<a href="">
-			<div>
-				<img src="img/test.jpg">
-			</div>
-			<p>the quick brown fox jumps over</p>
-			<div> <span> $ </span> 425</div>
-			<div> <del> $ 850</del> - 50%</div>
-		</a>
-	</div>
+			<a href="">
+				<div>
+					<img src="img/test.jpg">
+				</div>
+				<p>the quick brown fox jumps over</p>
+				<div> <span> $ </span> 425</div>
+				<div> <del> $ 850</del> - 50%</div>
+			</a>
+		</div>
+		<div id="card">
+			<a href="">
+				<div>
+					<img src="img/test.jpg">
+				</div>
+				<p>the quick brown fox jumps over</p>
+				<div> <span> $ </span> 425</div>
+				<div> <del> $ 850</del> - 50%</div>
+			</a>
+		</div>
+		<div id="card">
+			<a href="">
+				<div>
+					<img src="img/test.jpg">
+				</div>
+				<p>the quick brown fox jumps over</p>
+				<div> <span> $ </span> 425</div>
+				<div> <del> $ 850</del> - 50%</div>
+			</a>
+		</div>
+		<div id="card">
+			<a href="">
+				<div>
+					<img src="img/test.jpg">
+				</div>
+				<p>the quick brown fox jumps over</p>
+				<div> <span> $ </span> 425</div>
+				<div> <del> $ 850</del> - 50%</div>
+			</a>
+		</div>
 	</div>
 </body>
 </html>
