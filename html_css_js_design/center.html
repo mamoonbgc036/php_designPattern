@@ -27,13 +27,18 @@
 			font-size: 13px;
 			padding: 5px;
 		}
-
 		#shopingCart{
-			margin-top: 10px;
-		}
-		#shopingCart, ul{
-			display: flex;
+			display: grid;
+			grid-template-columns: repeat(auto-fit,minmax(200px,max-content));
+			align-items: center;
 			justify-content: center;
+			margin: 20px auto;
+			width: 90%;
+		}
+
+		#menu ul{
+			display: flex;
+			justify-content: space-around;
 		}
 		#card{
 			width: 180px;
