@@ -4,3 +4,6 @@ function check(a, b){
 }
 
 console.log( check(10, 8) )
+
+//convert string to number
+parseInt('12');
