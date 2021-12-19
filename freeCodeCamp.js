@@ -49,3 +49,15 @@ function lookUpProfile( name, prop ){
   return x.length ? x[0][prop] ? x[0][prop] : 'No such property' : 'No such contact';
 }
 console.log(lookUpProfile("Sherlock", "likes"));
+
+//recursion that replace for loop
+function rangeOfNumbers(startNum, endNum) {
+  if(startNum === endNum){
+    return arry;
+  };
+  console.log(startNum);
+  startNum++;
+  rangeOfNumbers(startNum, endNum );
+};
+
+rangeOfNumbers(1,10);
