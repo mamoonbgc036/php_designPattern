@@ -90,3 +90,6 @@ return product;
 }
 
 console.log(multiply(arr));
+
+const myStr = "Socratics say that \"Honesty is the best policy\"."; // Change this line
+console.log(myStr);
