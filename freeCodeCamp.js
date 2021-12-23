@@ -93,3 +93,15 @@ console.log(multiply(arr));
 
 const myStr = "Socratics say that \"Honesty is the best policy\"."; // Change this line
 console.log(myStr);
+
+// Setup
+let processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+// Only change code below this line
+
+processed = processArg(25);
+console.log(processed)
