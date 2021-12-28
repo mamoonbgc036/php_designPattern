@@ -116,3 +116,13 @@ const myDog = {
 myDog.language = 'paython, java';
 
 console.log(myDog);
+
+const measure = {
+  'height' : 24,
+  'age' : 35,
+  'weight' : 80,
+}
+
+const myFun = (measur) => measur.age + measur.weight;
+
+console.log(myFun(measure));
