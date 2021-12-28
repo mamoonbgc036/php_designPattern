@@ -105,3 +105,14 @@ function processArg(num) {
 
 processed = processArg(25);
 console.log(processed)
+
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.language = 'paython, java';
+
+console.log(myDog);
