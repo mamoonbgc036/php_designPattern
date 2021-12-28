@@ -126,3 +126,17 @@ const measure = {
 const myFun = (measur) => measur.age + measur.weight;
 
 console.log(myFun(measure));
+
+class Human{
+   name;
+  constructor(nam){
+    this.name = nam;
+  }
+
+   getName(){
+     return this.name;
+  }
+}
+
+const x = new Human('noman');
+console.log(x.getName())
