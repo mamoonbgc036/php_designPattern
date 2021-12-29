@@ -140,3 +140,8 @@ class Human{
 
 const x = new Human('noman');
 console.log(x.getName())
+
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let x = myRegex.test(myString);
+console.log(x)
