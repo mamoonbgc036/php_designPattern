@@ -145,3 +145,15 @@ let myString = "Hello, World!";
 let myRegex = /Hello/;
 let x = myRegex.test(myString);
 console.log(x)
+
+//reverse string
+function reverseString(str) {
+  let newStr = '';
+  for (let i = str.length-1; i >= 0; i--){
+    newStr += str[i];
+  }
+  return newStr;
+}
+
+let x = reverseString("hello");
+console.log(x);
