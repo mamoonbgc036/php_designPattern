@@ -157,3 +157,15 @@ function reverseString(str) {
 
 let x = reverseString("hello");
 console.log(x);
+
+//factorial
+function factorialize(num) {
+  let mul = 1;
+  for(let i = num; i>0; i--){
+    mul *= i;
+  }
+  return mul;
+}
+
+let x = factorialize(5);
+console.log(x);
