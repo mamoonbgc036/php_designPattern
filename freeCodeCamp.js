@@ -169,3 +169,17 @@ function factorialize(num) {
 
 let x = factorialize(5);
 console.log(x);
+
+//finding longest word in a sentences
+let str = "Bangladesh is our country";
+
+function test(str){
+  let arry = str.split(" ");
+  let bigger = (arry[0].length>arry[1].length) ? arry[0] : arry[1];
+  for(let i = 2; i < arry.length; i++){
+    bigger = (bigger.length>arry[i].length) ? bigger : arry[i];
+  }
+  console.log(bigger);
+}
+
+test(str)
