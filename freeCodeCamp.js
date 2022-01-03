@@ -183,3 +183,16 @@ function test(str){
 }
 
 test(str)
+
+//check whether end of a string is matched with the target
+function confirmEnding(str, target) {
+  if(str.indexOf(' ')>=0){
+    console.log('yes');
+  }else{
+    console.log(str[target.length])
+  }
+  return str;
+}
+
+confirmEnding("Bastian", "n");
+
