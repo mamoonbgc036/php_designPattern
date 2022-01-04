@@ -186,21 +186,19 @@ test(str)
 
 //check whether end of a string is matched with the target
 function confirmEnding(str, target) {
-  if(str.indexOf(' ')>=0){
-    console.log('yes');
-  }else{
-    console.log(str[target.length])
-  }
-  return str;
-}
-
-confirmEnding("Bastian", "n");
-
-function confirmEnding(str, target) {
   let testLen = '';
   let tarLen = target.length;
   if(str.indexOf(' ')>=0){
-    console.log('yes');
+    let arry = str.split(' ');
+    let mword = arry[arry.length-1];
+    for(let i = mword.length-tarLen; i < mword.length ; i++ ){
+      testLen += mword[i];
+    }
+    if(testLen==target){
+      console.log('yes')
+    }else{
+      console.log('no');
+    }
   }else{
     for(let i = str.length-tarLen; i < str.length ; i++ ){
       testLen += str[i];
@@ -214,5 +212,6 @@ function confirmEnding(str, target) {
   return str;
 }
 
-confirmEnding("Bastian", "man");
+confirmEnding("Open sesame", "same");//return yes
+
 
