@@ -196,3 +196,23 @@ function confirmEnding(str, target) {
 
 confirmEnding("Bastian", "n");
 
+function confirmEnding(str, target) {
+  let testLen = '';
+  let tarLen = target.length;
+  if(str.indexOf(' ')>=0){
+    console.log('yes');
+  }else{
+    for(let i = str.length-tarLen; i < str.length ; i++ ){
+      testLen += str[i];
+    }
+    if(testLen==target){
+      console.log('yes')
+    }else{
+      console.log('no');
+    }
+  }
+  return str;
+}
+
+confirmEnding("Bastian", "man");
+
