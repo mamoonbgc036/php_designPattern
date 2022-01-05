@@ -231,4 +231,15 @@ let y = truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket 
 
 console.log(y);
 
+function findElement(arr, func) {
+  for(let i = 0; i < arr.length; i++){
+    let testedElement = func(arr[i]);
+      if(testedElement === true){
+        return arr[i];
+      }
+  }
+}
+
+let tested = findElement([1, 3, 5, 9], function(num) { return num % 2 === 0; })
+
 
