@@ -214,14 +214,21 @@ function confirmEnding(str, target) {
 
 confirmEnding("Open sesame", "same");//return yes
 
-function repeatStringNumTimes(str, num) {
+function truncateString(str, num) {
   let newStr = '';
-  for(let i = 0; i < num; i++){
-    newStr += str;
+  if(str.length > num){
+    for(let i =0; i < num; i++){
+      newStr += str[i];
+    }
+    newStr += '...';
+    return newStr;
+  } else{
+    return str;
   }
-  return newStr;
 }
 
-console.log(repeatStringNumTimes("abc", 3));
+let y = truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length)
+
+console.log(y);
 
 
