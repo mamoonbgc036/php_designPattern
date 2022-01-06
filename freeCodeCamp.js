@@ -252,4 +252,13 @@ function booWho(bool) {
 
 console.log(booWho(false));
 
+function titleCase(str){
+  let convertedArry = str.split(' ');
+  let result = convertedArry.map(val=>val.replace(val.charAt(0), val.charAt(0).toUpperCase()));
+  let x = result.join(' ');
+  return x;
+}
+
+console.log(titleCase("I'm a little tea pot"));
+
 
