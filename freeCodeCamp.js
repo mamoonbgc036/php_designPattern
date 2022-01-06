@@ -242,4 +242,14 @@ function findElement(arr, func) {
 
 let tested = findElement([1, 3, 5, 9], function(num) { return num % 2 === 0; })
 
+function booWho(bool) {
+  if(bool == true || bool == false){
+    return 'true';
+  } else{
+    return 'false';
+  }
+}
+
+console.log(booWho(false));
+
 
