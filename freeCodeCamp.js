@@ -261,4 +261,16 @@ function titleCase(str){
 
 console.log(titleCase("I'm a little tea pot"));
 
+function reverseWord(word){
+  let newWord = '';
+  for(let i = word.length-1;i >= 0; i--){
+    newWord += word[i];
+  }
+  return newWord;
+}
+
+console.log(reverseWord('mamoon'))
+
+
+
 
