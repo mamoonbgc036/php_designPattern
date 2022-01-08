@@ -1,0 +1,13 @@
+1.https://www.freecodecamp.org/news/7-key-steps-to-getting-your-first-software-engineering-job-6ef80543cad9/
+ 
+ =>a portfolio of at least three projects is critical
+
+ =>You should also be ready to discuss your project’s strengths and weaknesses with an interviewer
+
+ =>Several of my interviewers pulled up my Github and asked me to walk through my code with them.
+
+ =>I recommend familiarizing yourself with Git + Github
+
+ =>If you’ve never used Git for team collaboration, I would definitely recommend making your first PR to an open-source project.
+
+2.https://medium.com/swlh/how-to-land-your-first-job-as-a-software-engineer-d37c0b94f8a0
