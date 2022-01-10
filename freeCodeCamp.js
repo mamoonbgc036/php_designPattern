@@ -302,6 +302,20 @@ function sumAll(arr) {
 
 console.log(sumAll([1, 4]));
 
+function destroyer(...arr) {
+  let test = arr.shift()
+  for(let i = 0; i < arr.length; i++){
+    for(let j = 0; j < test.length; j++){
+      if(arr[i] === test[j]){
+        test.splice(j,1)
+      }
+    }
+  }
+  console.log(test)
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 10, 3);
+
 
 
 
