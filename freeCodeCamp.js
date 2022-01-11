@@ -316,6 +316,19 @@ function destroyer(...arr) {
 
 destroyer([1, 2, 3, 1, 2, 3], 10, 3);
 
+function whatIsInAName(collection, source) {
+  var srcKeys = Object.keys(source);
+
+  return collection.filter(function(obj) {
+    return srcKeys.every(function(key){
+      return obj.hasOwnProperty(key) && obj[key] === source[key]
+    })
+  });
+}
+const result = whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
+
+console.log(result)
+
 
 
 
