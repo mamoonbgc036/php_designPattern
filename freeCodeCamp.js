@@ -329,6 +329,13 @@ const result = whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Me
 
 console.log(result)
 
+function spinalCase(str) {
+  let newStr = str.replaceAll(' ', '-')
+  let conStr = newStr.toLowerCase()
+  return conStr;
+}
+
+console.log(spinalCase('This Is Spinal Tap'));
 
 
 
