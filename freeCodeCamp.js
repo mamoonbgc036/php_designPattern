@@ -336,7 +336,7 @@ function spinalCase(str) {
 }
 
 console.log(spinalCase('This Is Spinal Tap'));
-
+//FIND THE MISSING LETTER
 function fearNotLetter(str) {
   let strArr = str.split('')
   let firstCode = strArr[0].charCodeAt();
