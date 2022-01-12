@@ -337,6 +337,24 @@ function spinalCase(str) {
 
 console.log(spinalCase('This Is Spinal Tap'));
 
+function fearNotLetter(str) {
+  let strArr = str.split('')
+  let firstCode = strArr[0].charCodeAt();
+  for(let i = 1; i < strArr.length; i++){
+      firstCode++
+     let code = strArr[i].charCodeAt()
+     if(code !== firstCode){
+       var letter = String.fromCharCode(firstCode)
+       break
+     }
+  }
+  console.log(letter)
+}
+
+
+fearNotLetter("abcdefghijklmnopqrstuvwxyz");
+
+
 
 
 
