@@ -354,6 +354,30 @@ function fearNotLetter(str) {
 
 fearNotLetter("abcdefghijklmnopqrstuvwxyz");
 
+function uniteUnique(...arr) {
+  let arry = arr[0]
+  let letter = []
+  let count = 0;
+  for(let i = 1; i < arr.length; i++){
+    for(let j = 0; j < arr[i].length; j++){
+        for(let k = 0; k < arry.length; k++){
+          if(arry[k]===arr[i][j]){
+            count++
+          }
+        }
+        if(count >= 1){
+          letter.push(arr[i][j])
+          count = 0
+        }
+    }
+     console.log(letter)
+  }
+}
+
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+
+//compare the first with the second and find the ummatched elements and store it in a array and compare the store array with the third array and concat it with the first array
+
 
 
 
