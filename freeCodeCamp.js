@@ -379,6 +379,34 @@ uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 //compare the first with the second and find the ummatched elements and store it in a array and compare the store array with the third array and concat it with the first array
 
 
+// find the union
+function uniteUnique(...arr) {
+  let arry = arr[0]
+  let count = false;
+  let newArry = []
+  for(let i = 1; i < arr.length; i++){
+    for(let j = 0; j < arr[i].length; j++){
+      for(let k = 0; k < arry.length; k++){
+          if(arry[k]===arr[i][j]){
+            count = true;
+          }
+      }
+      if(count === false){
+         newArry.push(arr[i][j])
+      }
+      count = false
+    }
+  }
+
+  let result = arry.concat(newArry)
+
+  console.log(result)
+}
+
+
+
+uniteUnique([1, 2, 3], [5, 2, 1, 4], [2, 1], [6, 7, 8])
+
 
 
 
