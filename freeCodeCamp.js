@@ -1,3 +1,20 @@
+//reverse a statement
+function reverse(str){
+  let newStr = str.split(' ')
+  let newString = ''
+  let word = ''
+  for(let i = 0; i < newStr.length; i++){
+    for(let j = newStr[i].length-1; j >= 0; j--){
+        word += newStr[i][j]
+    }
+    newString += ' '+word
+    word = ''
+  }
+  console.log(newString)
+}
+
+reverse('mamoon is a good boy')
+
 //trenary operator
 function check(a, b){
   return (a===b) ? 'a and b is equal' : (a < b) ? 'a is smaller' : 'b is smaller';
