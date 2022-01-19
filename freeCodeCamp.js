@@ -441,6 +441,25 @@ function sumFibs(num) {
 
 sumFibs(75025)
 
+// prime number tester
+function sumPrimes(num) {
+  let len = num/2
+  let finallen = Math.round(len)
+  let count = false
+  for(let i = 2; i < finallen; i++){
+    if(num%i===0){
+      count = true
+    }
+  }
+  if(count !== true){
+    console.log('yes')
+  }
+
+}
+
+
+sumPrimes(2850);
+
 
 
 
