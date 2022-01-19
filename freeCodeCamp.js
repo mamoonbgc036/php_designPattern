@@ -423,6 +423,25 @@ function uniteUnique(...arr) {
 
 
 uniteUnique([1, 2, 3], [5, 2, 1, 4], [2, 1], [6, 7, 8])
+//find sum of all odd Fibonacci number upto a given number
+function sumFibs(num) {
+  let x = [1,1]
+  let sum = x[0]+x[1]
+  for(; x[1] <= num;){
+    let z = x[0]+x[1]
+    if(x[1]%2===1){
+      sum+=x[1]
+    }
+    x.shift()
+    x.push(z)
+  }
+  sum--
+  console.log(sum)
+}
+
+sumFibs(75025)
+
+
 
 
 
