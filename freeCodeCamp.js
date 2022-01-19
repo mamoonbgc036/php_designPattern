@@ -459,6 +459,28 @@ function sumPrimes(num) {
 
 
 sumPrimes(2850);
+//find all prime number upto a number
+function sumPrimes(num) {
+
+  for(let i = 4; i < num; i++){
+    let len = i/2
+    let finalLen = Math.round(len)
+    let count = false
+    for(let j = 2; j <= finalLen; j++){
+      if(i%j===0){
+        count = true
+      }
+    }
+  
+    if(count!==true){
+      console.log(i)
+    }
+    count = false
+  }
+}
+
+
+sumPrimes(20);
 
 
 
