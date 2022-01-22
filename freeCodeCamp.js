@@ -482,6 +482,35 @@ function sumPrimes(num) {
 
 sumPrimes(20);
 
+//find sum of all prime number upto a number
+function sumPrimes(num) {
+  let sum = 5
+  let count = false
+  for(let i = 4; i <= num; i++){
+    let len = i/2
+    let finalLen = Math.round(len)
+    
+    for(let j = 2; j <= finalLen; j++){
+      if(i%j===0){
+        count = true
+      }
+    }
+
+    finalLen = 0
+  
+    if(count!==true){
+      sum += i
+    }
+    count = false
+  }
+  console.log(sum)
+}
+
+
+sumPrimes(977);
+
+
+
 
 
 
