@@ -1,0 +1,28 @@
+stop watch
+converstion
+calculator
+to-do list
+tic-tac-tok
+weather app(have a voice notice systems)
+
+*****************
+LARAVEL 
+
+goal
+to stabilize the daily consumed goods price
+
+to provide potential business opportunites for all. for example i have 10000 tk. at my hand at now and i know by the website that the price of potato is 20tk. in meherpur.but its price is 40tk. in my area. so i decide to have one time business with the money and contact with a seller posted her potato's adv in the website.
+
+beneficiary-farmer:fish,vegitable,saver
+
+functional requirement-
+farmer can upload their product image,price,mobile no.,place of the products.
+
+**********************
+
+WORDPRESS 
+
+CONSTRUCTION COMPANY WEBSITE
+PHOTOGARLLARY WEBSITE
+ECOMMERCE WEBSITE
+WEBSITE ONLINE EDUCATION TRAINNING WEBSITE LIKE JSBANGLADESH
