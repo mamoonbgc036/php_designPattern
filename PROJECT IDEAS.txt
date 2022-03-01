@@ -4,6 +4,8 @@ calculator
 to-do list
 tic-tac-tok
 weather app(have a voice notice systems)
+online bot
+chat app with socket.io
 
 *****************
 LARAVEL 
