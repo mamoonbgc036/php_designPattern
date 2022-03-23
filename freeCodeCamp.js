@@ -509,6 +509,22 @@ function sumPrimes(num) {
 
 sumPrimes(977);
 
+//find even number
+const num = [1, 5, 3, 2, 12, 9, 3]
+
+function isEven(num) {
+  let arry = []
+  for ( let i = 0; i < num.length; i++){
+    if ( num[i] % 2 == 0){
+      arry.push(num[i])
+    }
+  }
+
+  console.log(arry)
+}
+
+isEven(num)
+
 
 
 
