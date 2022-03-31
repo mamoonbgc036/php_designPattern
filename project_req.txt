@@ -1,0 +1,17 @@
+input form
+
+c name
+c adress
+order pro.
+amount
+price
+
+time frame
+option to print address manually
+
+street 
+city
+state
+
+order_table=>or.id pro.na qty c.na or.date is_shift dollar
+
