@@ -49,6 +49,8 @@ https://medium.com/the-ascent/if-youre-lost-learn-how-to-dream-again-7c1d12dfbd9
 
 https://www.pdfdrive.com/learning-how-to-learn-how-to-succeed-in-school-without-spending-all-your-time-studying-a-guide-for-kids-and-teens-e195220593.html
 
+https://stackoverflow.com/questions/67172513/change-wordpress-user-profile-picture-based-on-a-custom-upload-field-from-woocom
+
 // Replace default Gravatar Image used in WordPress
 function filter_get_avatar( $avatar, $id_or_email, $size, $default, $alt ) {    
     // If is email, try and find user ID
