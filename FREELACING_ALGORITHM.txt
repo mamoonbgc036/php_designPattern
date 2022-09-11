@@ -6,12 +6,24 @@
 6.research marketplace
 7.marketplace a/c
 
-SERVICES I WANT TO OFFER
+SERVICES I CAN OFFER
 1.PSD TO HTML
 2.ERROR FIXING
 3.HTML TO WORDPRESS
 4.RESPONSIVENESS
-5.
+5.mobile responsive
+
+SERVICES I LEARN
+1.theme development
+2.woocommerce
+3.speed
+4.hosting
+5.migration
+6.multilanguage
+7.plugin development
+8.subdomain
+9.payment gateway
+
 
 UPWORK
 LINKEDIN
