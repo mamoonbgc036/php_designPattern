@@ -33,6 +33,6 @@ $val = apply_filter( 'test_filter', $post->excerpt );
 function.php
 add_filter('test_filter', 'my_custom_code');
 
-function my_custom_code($passval){
-  return $passval.'modified data';
+function my_custom_code($post_excerpt){
+  return $post_excerpt.'modified data';
 }
