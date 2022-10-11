@@ -1,1 +1,38 @@
 https://www.wpbeginner.com/wp-tutorials/how-wordpress-actually-works-behind-the-scenes-infographic/
+
+add_action metaphor with charger cable
+cable is hook name
+do_action is whether the cable is pluged into samsung walton or torchlight 
+callback for the cable is whether it connected to laptop to pass data or adaptor to pass electricity.
+here laptop or adaptor is callback function
+
+ACTION HOOKED
+<head>
+  <?php do_action('test'); ?>
+</head>
+
+function.php
+
+function my_custom_code(){
+ echo 'my code goes here..';
+}
+add_action('test', 'my_custom_code');
+
+so the 'my code goes here..' will be echo in between head
+
+FILTER HOOKED
+
+global $post;
+
+$val = apply_filter( 'test_filter', $post->excerpt );
+
+<div>
+  <?php echo $val; ?>
+</div>
+
+function.php
+add_filter('test_filter', 'my_custom_code');
+
+function my_custom_code($passval){
+  return $passval.'modified data';
+}
