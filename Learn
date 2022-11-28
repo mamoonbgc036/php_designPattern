@@ -1,6 +1,7 @@
 1.load_text_domain
 2.wordpress interview question
 3.add_theme_support("post_thumbnails"),html5,post-formats
+4.add_editor_style(path)
 What is a Full Stack Developer? 2022 Full Stack Engineer Guide
 Freecodecamp
 how wordpress know for page use page.php
