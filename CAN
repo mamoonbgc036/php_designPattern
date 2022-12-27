@@ -111,3 +111,17 @@ function filter_get_avatar( $avatar, $id_or_email, $size, $default, $alt ) {
     return $avatar;
 }
 add_filter( 'get_avatar', 'filter_get_avatar', 10, 5 );
+
+{
+  "editor.formatOnSave": false,
+  "[php]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+  },
+  "phpfmt.passes": [
+    "AlignPHPCode",
+    "AlignDoubleArrow",
+  ],
+  "phpfmt.exclude": [],
+  "phpfmt.psr2": false,
+}
