@@ -1,5 +1,18 @@
 test with axios.get(`/api/product?page=${page}
 
+this.products = response.data
+check wheter
+console.log(this.products) show 
+{…}
+current_page
+: 
+(...)
+data
+: 
+(...)
+first_page_url
+if not then there is a problem
+
 
 
 Mediusware interview project algorithm
