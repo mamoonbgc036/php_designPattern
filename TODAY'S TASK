@@ -1,3 +1,7 @@
+test with axios.get(`/api/product?page=${page}
+
+
+
 Mediusware interview project algorithm
 1.fetch product json data and pass it to vue template(<products>
 2.
