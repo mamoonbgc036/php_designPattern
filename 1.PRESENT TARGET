@@ -7,3 +7,5 @@ let buld crm
 1.PROTFOLIO WITH VUE AND LARAVEL
 2.OPEN SOURCE CONTRIBUTION
 3.BASIC OF DSA,JS,PHP
+
+Slow blink is supposed to show a sleep mode. Perhaps the system thinks the battery is low enough that it immediately sleeps? Did you use the full procedure for a battery reset? disconnect everything, including power. Press and hold the reset button for 15-30 seconds then release. Wait 15-30 minutes to allow for full bleed off then plug the power back in. Wait until you see the full battery indication, then reconnect everything and turn it back on.
