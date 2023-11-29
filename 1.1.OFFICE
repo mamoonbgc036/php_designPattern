@@ -1,3 +1,4 @@
+try $route.params.name and $route.params.imageUrl directly in <DashboardLayout>
 1.unique keyword in email in employee migration file
 
 1.write a route in vue to bring `create employee form` with a function to get all department
