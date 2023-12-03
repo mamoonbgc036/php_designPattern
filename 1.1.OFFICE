@@ -1,3 +1,18 @@
+1.BOOK ON API DEVELOPMENT IN LARAVEL
+2.DETAILS OF COMPOSER
+3.REPOSITORY PATTERN
+4.SPL_AUTOLOAD
+5.SPL_AUTOLOAD IN MY GITHUB
+6.resource
+7.autoloading mechinizam
+8.accessor and mutator
+9.break down a project in laravel
+10.how to work on an existing project
+11.private and protected
+12.job queues
+13.policy
+
+
 try $route.params.name and $route.params.imageUrl directly in <DashboardLayout>
 1.unique keyword in email in employee migration file
 
