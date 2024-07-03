@@ -1,4 +1,5 @@
 1.explain your contribution to perky project: 
+          laravel
 role and permission, 
 notification, 
 pdf generated certificate, 
@@ -8,3 +9,7 @@ crud
 queue,
 event,
 by implementing it in mistress
+
+        vue
+two way binding
+directive v-if, v-on, 
