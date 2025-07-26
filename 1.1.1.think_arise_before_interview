@@ -1,4 +1,5 @@
-
+cors configuration
+laravel job and queue
 1. say a problem you face in your development and how you overcome that.
 2. how to configure cors for vue and laravel.
 3. service provider and service container
