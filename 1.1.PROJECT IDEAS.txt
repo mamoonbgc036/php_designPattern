@@ -1,3 +1,89 @@
+ওয়েব ডেভেলপার  নীডস! We're hiring Custom Web developer !! 
+১. ব্যবসার ধরন
+আমার ব্যবসা সার্ভিস-ভিত্তিক। এখানে পণ্য বিক্রি নয়, গ্রাহক নিজের কাপড়ে বা অন্য আইটেমে ডিজাইন বা এমব্রয়ডারি করাবে।
+সেবা:
+এমব্রয়ডারি – বোরকা, থ্রীপিছ, কুর্তি, কুর্তা, পাঞ্জাবি, জোব্বা, হুডি, টিশার্ট, পোলো শার্ট, ট্রাউজার, ক্যাপ, হিজাব, আবায়া, ওড়না, বিছানা চাদর, টেবিল ক্লোথ, দরজা/জানালার পর্দা, নকশিকাঁথা, শিশুদের জামা ইত্যাদি।
+ডিজিটাল প্রিন্ট / DTF / Sublimation / Screenprint
+কাস্টম ডিজাইন বুকিং – গ্রাহক নিজের ডিজাইন আপলোড করতে পারবে।
+নোট: ভবিষ্যতে নতুন ক্যাটাগরি যুক্ত করার সুযোগ থাকতে হবে।
+২. ওয়েবসাইটের উদ্দেশ্য
+গ্রাহক ডিজাইন প্রিভিউ করতে পারবে।
+গ্রাহক বা টেইলার ডিজাইন কোড ব্যবহার করে বুকিং / অর্ডার করতে পারবে।
+টেইলাররা এফিলিয়েট প্রোগ্রামে যোগ দিয়ে কমিশন পাবে।
+বড় অর্ডার বা স্কুল/কর্পোরেট অর্ডার সহজে ম্যানেজ করা যাবে।
+৩. ওয়েবসাইটের মূল ফিচার
+A) হোমপেজ
+বড় স্লাইডার: Embroidery, DTF, Sublimation, Screenprint দেখাবে।
+ক্যাটাগরি কার্ড: Embroidery, DTF, Sublimation, Screenprint, Custom Upload।
+শর্টকাট: “ডিজাইন কাস্টমাইজ করুন” এবং “নিজের ডিজাইন আপলোড করুন”।
+টেইলারদের জন্য এফিলিয়েট প্রোমো।
+How it works + প্রাইসিং তথ্য।
+B) ক্যাটাগরি ভিত্তিক ডিজাইন লাইব্রেরি (Mockup)
+প্রাথমিক ক্যাটাগরি:
+বোরকা, থ্রীপিছ, কুর্তি, কুর্তা, পাঞ্জাবি, জোব্বা, হুডি, টিশার্ট, পোলো শার্ট, ট্রাউজার, ক্যাপ, হিজাব, আবায়া, ওড়না, বিছানা চাদর, টেবিল ক্লোথ, দরজা/জানালার পর্দা, নকশিকাঁথা, শিশুদের জামা।
+প্রতিটি ক্যাটাগরিতে আলাদা ডিজাইন ফোল্ডার।
+গ্রাহক ডিজাইন ক্লিক করলে মকআপে বসে প্রিভিউ দেখাবে।
+ভবিষ্যতে নতুন ক্যাটাগরি সহজে যুক্ত করার অপশন থাকবে।
+C) কাস্টম ডিজাইন আপলোড
+গ্রাহক নিজের ডিজাইন বা লোগো আপলোড করবে।
+লাইভ মকআপে দেখাবে কেমন লাগবে।
+Price estimate দেখানো হবে।
+বুকিং ফর্মে অগ্রিম পেমেন্ট দেওয়া যাবে।
+D) Mockup Customizer (UI)
+Fabric / Clothing Color সিলেক্ট করা যাবে।
+ডিজাইন Drag, Resize, Rotate করা যাবে।
+Apply করার পর লাইভ প্রিভিউ দেখাবে।
+Step-by-step UI, প্রতিটি ধাপ আলাদা স্ক্রিন।
+বিকাশ অ্যাপের মতো সহজ ও ইন্টারেক্টিভ।
+E) অর্ডার বুকিং সিস্টেম
+Step 1: ডিজাইন কোড + ক্যাটাগরি।
+Step 2: অর্ডার ডিটেইলস (Quantity, Delivery Date, Advance Payment)।
+Step 3: Payment (Cash / Bkash / Nagad)।
+Physical delivery & payment পরে সম্পন্ন হবে।
+F) Tailor Affiliate System
+Tailor Registration + Unique Code।
+Code ব্যবহার করে অর্ডার দিলে Tailor কমিশন পাবেন।
+Tailor Dashboard: মোট অর্ডার, Pending / Approved Commission, Withdrawal Request।
+Admin Panel: Tailor Approve / Commission Tracking।
+G) Bulk / Institutional Order
+স্কুল ব্যাজ / ইউনিফর্ম অর্ডার।
+Quantity + Logo Upload + Fabric Type।
+Price / Quotation Request দেখানো হবে।
+Admin ম্যানুয়ালি অর্ডার কনফার্ম করবে।
+H) Admin Panel
+Design Upload / Delete।
+Category Management (নতুন ক্যাটাগরি যুক্ত / মুছে ফেলা)।
+Order Management।
+Tailor Management।
+Commission Management।
+Bulk Order Approval।
+Payment / Booking Status Tracking।
+I) Technical Stack
+Frontend: HTML + CSS + JavaScript + Vue.js / React।
+Backend: Laravel (PHP Framework)।
+Database: MySQL / PostgreSQL।
+Customizer Engine: Fabric.js / Konva.js।
+Payment Gateway: SSLCOMMERZ, Bkash, Nagad।
+Hosting: We'll provide 
+J) UI / UX নির্দেশনা
+Step-by-step screens, এক কাজ এক স্ক্রিন।
+বড় বাটন, স্পষ্ট ক্যাটাগরি।
+Mockup Customizer সহজ ও ইন্টারেক্টিভ।
+Mobile-friendly & Touch-friendly।
+ভিজ্যুয়াল লেআউট: বিকাশ অ্যাপের মতো।
+৪.  সামারি: 
+“আমার ওয়েবসাইট হবে সার্ভিস-ভিত্তিক, যেখানে গ্রাহক কাপড়ে বা অন্যান্য আইটেমে ডিজাইন বসিয়ে প্রিভিউ দেখবে এবং বুকিং করবে।
+হোমপেজে বড় কার্ড ও স্লাইডার থাকবে।
+মকআপ ক্যাটাগরি: বোরকা, থ্রীপিছ, কুর্তি, কুর্তা, পাঞ্জাবি, জোব্বা, হুডি, টিশার্ট, পোলো শার্ট, ট্রাউজার, ক্যাপ, হিজাব, আবায়া, ওড়না, বিছানা চাদর, টেবিল ক্লোথ, দরজা/জানালার পর্দা, নকশিকাঁথা, শিশুদের জামা ইত্যাদি। ভবিষ্যতে নতুন ক্যাটাগরি যুক্ত করার সুযোগ থাকতে হবে।
+কাস্টমাইজার মকআপে ডিজাইন Drag/Resize/Color-Change হবে।
+Step-by-step UI হবে বিকাশ অ্যাপের মতো সহজ।
+Tailor-এর জন্য এফিলিয়েট কোড + কমিশন ড্যাশবোর্ড থাকবে।
+Bulk অর্ডার এবং স্কুল/ইনস্টিটিউশন অর্ডার ম্যানেজ করা যাবে।
+Admin Panel থাকবে সব ফিচার কনট্রোল করার জন্য।
+প্রযুক্তি স্ট্যাক: Laravel + Vue/React + Fabric.js + MySQL + Payment Gateway।
+সিকিউরিটি, স্কেল এবং ভবিষ্যৎ এক্সপানশন মাথায় রেখে ডিজাইন করতে হবে।”
+
+
 ================================
 SAY DIRECTION
 SET DIRECTION GOAL TO CHITTAGONT UNIVERSITY FROM MY GOOGLE IN MY PHONE, MY PHONE DIRECT ME FROM MY MALPUKURIA HOUSE
@@ -67,3 +153,4 @@ CONSTRUCTION COMPANY WEBSITE
 PHOTOGARLLARY WEBSITE
 ECOMMERCE WEBSITE
 WEBSITE ONLINE EDUCATION TRAINNING WEBSITE LIKE JSBANGLADESH
+
